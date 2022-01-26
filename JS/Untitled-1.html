@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta cherset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+ </head>
+<body>
+    
+    <div class='alert-box' id='alert'>
+        <p>Alert Box</p>
+        <button onclick=Close_AlertBox()>닫기</button>
+        <button onclick=ChangeClr_Blue()>텍스트 색상 파란색으로</button>
+        <button onclick=ChangeClr_Red()>텍스트 색상 빨간색으로</button>
+        <button onclick=ChangeClr_Green()>텍스트 색상 초록색으로</button>
+        <button onclick=ChangeBG_Blue()>배경 색상 파란색으로</button>
+        <button onclick=ChangeBG_Red()>배경 색상 빨간색으로</button>
+        <button onclick=ChangeBG_Green()>배경 색상 초록색으로</button>
+    </div>
+
+    <button onclick="Open_AlertBox()">Open</button>
+
+
+    <script>
+
+
+        function Open_AlertBox(){
+            document.getElementById('alert').style.display = 'block';
+
+        }
+        function Close_AlertBox(){
+            document.getElementById('alert').style.display = 'none';
+        }
+        function ChangeClr_Blue(){
+            document.getElementById('alert').style.color = 'blue';
+        }
+        function ChangeClr_Red(){
+            document.getElementById('alert').style.color = 'red';
+        }
+        function ChangeClr_Green(){
+            document.getElementById('alert').style.color = 'green';
+        }
+        function ChangeBG_Blue(){
+            document.getElementById('alert').style.background = 'blue';
+        }
+        function ChangeBG_Red(){
+            document.getElementById('alert').style.background = 'red';
+        }
+        function ChangeBG_Green(){
+            document.getElementById('alert').style.background = 'green';
+        }
+    </script>
+</body>
+
+</html>
