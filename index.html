@@ -1,18 +1,125 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="clock.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-    <h1 class="h1-clock"></h1>
-    <div class="thunderbolt">
-        <div class="shape1"></div>
-        <div class="shape2"></div>
-        <div class="shape3"></div>
-        <div class="shape4"></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Youtube Mobile</title>
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+       </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
 
-    </div>
-    <script src = "clock.js"></script>
-</body>
+    <!-- Video Player-->
+    <section class="player">
+      <video controls src="video.mp4"></video>
+    </section>
+
+    <!-- Video Info -->
+    <section class="info">
+      <!-- Metadata -->
+      <div class="metadata">
+         <ul class="hashtags">
+          <li>#2022NULL</li>
+          <li>#Hyungjun</li>ㄴ
+          <li>#CloneCoding</li>
+        </ul>
+        </div class="titleAndButton">
+          <span class="tltle clamp"
+            >2022NULL : Clone Coding
+          </span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+        <!-- Actions -->
+        <div class="views">
+          <span class="views">59k views 1 hour ago</span>
+        </div>
+      </div>
+      <ul class="actions">
+        <li>
+          <button>
+            <i class="active fas fa-thumbs-up"></i><span>421</span>
+          </button>
+        </li>
+        <li>
+            <button><i class="fas fa-thumbs-down"></i><span>2</span></button>
+        </li>
+        <li>
+            <button><i class="fas fa-share"></i><span>SHARE</span></button>
+        </li>
+        <li>
+            <button><i class="fas fa-plus"></i><span>SAVE</span></button>   
+        </li>
+        <li>
+          <button>
+            <i class="fab f a-font-awesome-flag"></i><span>REPORT</span>
+          </button>
+        </li>
+      </ul>    
+      <div class="channel">
+        <div class="metadata">
+          <img src="image.jpg" alt="" />    
+          <div class="info">
+            <span class="name">IASA-HJ</span>
+            <span class="subscribers">530k subscribers</span></div>
+          </div> 
+        <button class="subscribe">subscribe</button>
+        </div>
+
+      </div>
+    </section>
+    <section class="upNext">
+        <span class="title">Up Next</span>
+        <ul>
+            <li class="item">
+              <div class="img"></div>
+              <div class="info"><img src="1.jpg" alt="" /></div>
+                <div class="info">
+                    <span class="title">2022 NULL !</span>
+                    <span class="name">IASA-HJ</span>
+                    <span class="views">52k views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="info"><img src="2.jpg" alt="" /></div>
+                <div class="info">
+                    <span class="title">2022 NULL WebProgramming</span>
+                    <span class="name">IASA-HJ</span>
+                    <span class="views">624k views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+                <div class="info"><img src="3.jpg" alt="" /></div>
+                <div class="info">
+                    <span class="title">2022 NULL ?!</span>
+                    <span class="name">IASA-HJ</span>
+                    <span class="views">89k views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </ul>
+    </section>
+  </body>  
 </html>
